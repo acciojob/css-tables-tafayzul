@@ -1,1 +1,35 @@
 /*  your css code here. If applicable */
+table {
+            /* Allows the border-radius to show on individual cells */
+            border-collapse: separate; 
+            border-spacing: 5px;
+            font-family: sans-serif;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 0.5rem;
+            text-align: left;
+            min-width: 120px;
+        }
+
+        th {
+            font-weight: bold;
+        }
+
+        /* Styling for even rows (2nd, 4th, etc.) */
+        tr:nth-child(even) td {
+            background-color: #ffffff;
+        }
+
+        /* Styling for odd rows (1st, 3rd, etc.) */
+        /* Note: Header is usually the first row */
+        tr:nth-child(odd) td {
+            background-color: #f2f2f2;
+        }
+        
+        /* Ensuring the header row remains white or distinct if preferred */
+        tr:first-child th {
+            background-color: #ffffff;
+        }
